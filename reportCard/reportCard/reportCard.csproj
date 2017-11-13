@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E56D83A-DA47-4190-9FCE-81C9C56081E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>reportCard</RootNamespace>
+    <AssemblyName>reportCard</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarks.Designer.cs">
+      <DependentUpon>AddMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudents.Designer.cs">
+      <DependentUpon>AddStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.cs">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\Functions.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportCard.Designer.cs">
+      <DependentUpon>ReportCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Search.Designer.cs">
+      <DependentUpon>Student Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students Results Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students Results Search.Designer.cs">
+      <DependentUpon>Students Results Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Registration.Designer.cs">
+      <DependentUpon>User Registration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarks.resx">
+      <DependentUpon>AddMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudents.resx">
+      <DependentUpon>AddStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportCard.resx">
+      <DependentUpon>ReportCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Search.resx">
+      <DependentUpon>Student Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students Results Search.resx">
+      <DependentUpon>Students Results Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Registration.resx">
+      <DependentUpon>User Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\Zoom-icon.png" />
+    <None Include="Resources\pmj4hd20161208155431.png" />
+    <None Include="Resources\016833-3d-glossy-blue-orb-icon-symbols-shapes-minimize.png" />
+    <None Include="Resources\17004400-Icona-di-chiusura-Archivio-Fotografico1.jpg" />
+    <None Include="Resources\createuser1.png" />
+    <None Include="Resources\access_key-512.png" />
+    <None Include="Resources\8031433.jpg" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\user-icon-01.png" />
+    <None Include="Resources\createuser.png" />
+    <None Include="Resources\1462852097_free-09.ico" />
+    <None Include="Resources\1464723852_Home.png" />
+    <None Include="Resources\1462852078_pen_stroke_sketch_doodle_lineart_106.ico" />
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Male.ico" />
+    <None Include="Resources\1462852332_sound-09.ico" />
+    <None Include="Resources\1462852113_Vector-icons_05.png" />
+    <None Include="Resources\17004400-Icona-di-chiusura-Archivio-Fotografico.jpg" />
+    <None Include="Resources\Home-Icon.png" />
+    <None Include="Resources\1463030470_add_user.ico" />
+    <None Include="Resources\1463030440_user-group-new1.ico" />
+    <None Include="Resources\1463030324_home.ico" />
+    <None Include="Resources\NGIlEC.jpg" />
+    <None Include="Resources\kasipe.png" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-view-list-details.ico" />
+    <None Include="Resources\1462852558_user_male4.ico" />
+    <None Include="Resources\setup-default-icon.png" />
+    <None Include="Resources\Pixelkit-Flat-Jewels-Refresh.ico" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-process-stop.ico" />
+    <None Include="Resources\Male-user-warning-icon.png" />
+    <None Include="Resources\Male-user-remove-icon.png" />
+    <None Include="Resources\Custom-Icon-Design-Flatastic-4-Male-user-accept.ico" />
+    <None Include="Resources\Male-user-accept-icon.png" />
+    <None Include="Resources\Treetog-Junior-Document-scroll.ico" />
+    <None Include="Resources\Add User-24.png" />
+    <None Include="Resources\1463030440_user-group-new.ico" />
+    <None Include="Resources\1463030404_search_user.ico" />
+    <None Include="Resources\Checked User-24.png" />
+    <None Include="Resources\1463024166_sound-19.ico" />
+    <None Include="Resources\Aha-Soft-Large-Seo-SEO.ico" />
+    <None Include="Resources\1464723905_icon-101-folder-search1.png" />
+    <None Include="Resources\Receipt-25.png" />
+    <None Include="Resources\1464273789_printer1.ico" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\1464723916_folder-saved-search3.png" />
+    <None Include="Resources\1464723916_folder-saved-search2.png" />
+    <None Include="Resources\1464723916_folder-saved-search1.png" />
+    <None Include="Resources\1464273789_printer.ico" />
+    <None Include="Resources\1464723905_icon-101-folder-search.png" />
+    <None Include="Resources\1464723916_folder-saved-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\myImageButton\myImageButton.csproj">
+      <Project>{44490D59-1999-4CDF-8DFC-BFFD6443A28D}</Project>
+      <Name>myImageButton</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

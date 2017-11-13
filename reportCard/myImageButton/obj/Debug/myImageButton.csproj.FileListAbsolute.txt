@@ -1,0 +1,8 @@
+C:\Users\Akua\source\repos\reportCard\myImageButton\obj\Debug\myImageButton.csproj.CoreCompileInputs.cache
+C:\Users\Akua\source\repos\reportCard\myImageButton\bin\Debug\myImageButton.dll
+C:\Users\Akua\source\repos\reportCard\myImageButton\bin\Debug\myImageButton.pdb
+C:\Users\Akua\source\repos\reportCard\myImageButton\obj\Debug\myImageButton.dll
+C:\Users\Akua\source\repos\reportCard\myImageButton\obj\Debug\myImageButton.pdb
+C:\Users\Akua\source\repos\reportCard\myImageButton\obj\Debug\myImageButton.CustomImageButton.resources
+C:\Users\Akua\source\repos\reportCard\myImageButton\obj\Debug\myImageButton.csproj.GenerateResource.Cache
+C:\Users\Akua\source\repos\reportCard\myImageButton\obj\Debug\myImageButton.csprojResolveAssemblyReference.cache
